@@ -45,6 +45,7 @@ const LocationCard: CardComponent<Location> = ({ result }) => {
       {/* <p className="text-sm text-slate-700">{address.line1}</p>
       <p className="text-sm text-slate-700">{address.city}, {address.region}, {address.postalCode} </p> */}
       <Address address={address} />
+      Telephone &nbsp;&nbsp;<a href="#" style={{color:"#0067c8"}}>{mainPhone}</a>
       <div className="flex items-center">
         <button><a 
           target={"_blank"}

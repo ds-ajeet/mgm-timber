@@ -57,6 +57,7 @@ export const config: TemplateConfig = {
       "address",
       "yextDisplayCoordinate",
       "mainPhone",
+      "emails",
       "description",
       "hours",
       "slug"
@@ -152,7 +153,8 @@ const Location: Template<TemplateRenderProps> = ({
     yextDisplayCoordinate,
     hours,
     mainPhone,
-    description
+    description,
+    emails
   } = document;
 
   return (
@@ -185,6 +187,7 @@ const Location: Template<TemplateRenderProps> = ({
           </div>
 
         </div>
+        {/* {emails} */}
       </PageLayout>
     </>
   );

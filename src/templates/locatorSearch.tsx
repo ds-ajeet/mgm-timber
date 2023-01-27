@@ -10,7 +10,7 @@ import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
 
 export const getPath: GetPath<TemplateProps> = () => {
-  return `/locatorSearch`;
+  return `/index.html`;
 };
 
 
