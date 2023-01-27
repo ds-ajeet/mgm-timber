@@ -211,7 +211,7 @@ const optionClickHandler = () =>{
       <div className="locator-full-width">
         <div className="locator-container">
           <div className="result-listing">
-            <div className="search-block">
+            <div style={{background:"white"}} className="search-block">
 
               <h3 className="title">
                 Find Restaurants
