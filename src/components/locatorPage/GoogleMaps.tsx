@@ -314,12 +314,16 @@ function Infowindow(i:Number,result:any):void{
         <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.city}</div>
         <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.postalCode}</div>
         <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.region}</div>
-         <div className="flex items-center">
+        <div className="nameData font-bold text-sm md:text-base">
         <button><a 
           target={"_blank"}
-         >
-          <GetDirection latitude={result?.rawData?.yextDisplayCoordinate?.latitude} longitude={result?.rawData?.yextDisplayCoordinate?.longitude} />
-        </a></button></div>   
+          className="flex flex-col items-center text-sm text-orange"
+          >
+
+          <GetDirection latitude={result?.rawData?.yextDisplayCoordinate?.latitude}
+           longitude={result?.rawData?.yextDisplayCoordinate?.longitude} />
+
+        </a></button></div>  
         
         </div>
         );

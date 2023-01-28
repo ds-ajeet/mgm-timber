@@ -294,3 +294,117 @@ nav[aria-label="Pagination"] button:disabled{
 .footer_links .column ul li {
     @apply leading-5 text-base inline-block w-full
 }
+
+.btn
+{
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #02a6db;
+    letter-spacing: 2px;
+    padding: 12px 64px;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 35px;
+}
+
+.btn {
+    padding: 0 20px;
+    line-height: unset;
+    margin-left: 15px;
+    background-color: #0078b8;
+}
+input, select, textarea {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #9d9d9d;
+    color: #555;
+    height: 35px;
+    margin: 0;
+    max-width: 100%;
+    padding: 2px 5px;
+    width: 60%;
+}
+h5 {
+    color: #e9e9e9;
+    font-weight: bold;
+}
+h5 {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin-bottom: 8px;
+
+}
+.contact-links {
+    margin-top: 20px;
+  }
+  *, ::after, ::before {
+    box-sizing: inherit;
+    outline: none;
+  }
+
+
+
+.socialmedia {
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+.socialmedia::before {
+    content: "Follow Us";
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    outline: none;
+}
+li, ul {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.facebook {
+    background-image: url(../../frontend/mgmtimber/default/en_GB/images/socialmedia/facebook.svg);
+}
+.socialmedia li:hover {
+    opacity: .8;
+}
+.socialmedia li {
+    padding: 0;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    /* background: #e9e9e9; */
+}
+.cms-page-view li {
+    color: #7b7b7b;
+}
+li {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 8px;
+}
+
+
+
+
