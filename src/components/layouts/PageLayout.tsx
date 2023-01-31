@@ -1,5 +1,5 @@
 import * as React from "react";
-import Img, { Image } from "./Img";
+// import Img, { Image } from "./Img";
 import Header from "./header";
 import Footer from "./footer";
 
@@ -14,11 +14,13 @@ type Props = {
     _site,
     children,
   }: Props) => {
+    // console.log(_site);
     return (
+      
         <div style={{background:"white"}} className="min-h-screen">
-            <Header />
+            <Header _site={_site} />
                 {children}
-            <Footer />
+            <Footer _site={_site}/>
         </div>
     );
   };

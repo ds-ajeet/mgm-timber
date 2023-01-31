@@ -60,7 +60,7 @@ body {
 .header-nav .header-content {
     grid-template-areas: "left-column title right-column";
     grid-template-rows: 1fr;
-    @apply grid gap-2 py-4
+    @apply grid gap-4 py-4
 }
 
 .header-content-left .button {
@@ -404,7 +404,3 @@ li {
     line-height: 2rem;
     margin-bottom: 8px;
 }
-
-
-
-

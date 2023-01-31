@@ -212,10 +212,12 @@ const optionClickHandler = () =>{
         <div className="locator-container">
           <div className="result-listing">
             <div style={{background:"white"}} className="search-block">
+              <div style={{background:"#02a6db",height:"50px"}} className="border-2">
 
-              <h3 className="title">
-                Find Restaurants
+              <h3 className="title mt-4 text-white text-lg font-bold">
+                Find a branch
               </h3>
+              </div>
               {/* <LocationBias />  */}
               <div className="search-form">
                 <FilterSearch

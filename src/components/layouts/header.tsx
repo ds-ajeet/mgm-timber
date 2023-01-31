@@ -125,17 +125,23 @@
 //     </>
 //   );
 // };
-
 // export default Header;
+
+
+
+
+
+
+
 import * as React from "react";
-// import Cta from "./cta";
 import logo from "../../images/mgmlogo.jpg";
-// import logo from "../../images/Prezzo_Logo_RGB_OffWhite.png";
+
 
 type Link = {
   label: string;
   url: string;
 };
+
 
 const links: Link[] = [
   {
@@ -177,11 +183,18 @@ const links: Link[] = [
 
 ];
 
-const Header = () => {
-  const linkDoms = links.map((link) => (
-      <a className="navbar-item" href={link.url} >
-        <span>{link.label}</span>
-      </a>
+const Header = (props: any) => {
+  // console.log(props)
+  React.useEffect(() => {
+    document.body.setAttribute("id", "body");
+  })
+  const toggle = () => {
+    (document.getElementById("body") as HTMLInputElement).classList.toggle('');
+  };
+  const linkDoms = props?._site?.c_headerLinks?.map((link:any) => (
+    <a style={{ font: "caption", color: "black" }} className="navbar-item" href={link.link} >
+      <span>{link.label}</span>
+    </a>
   ));
 
   return (
@@ -193,11 +206,20 @@ const Header = () => {
               <span className="is-hidden-touch">Find a restaurant</span></a>
             <a className="button" href="#" title="Book now">Book now</a>
           </div> */}
-          <div className="header-content-middle">
+          {/* <div className="header-content-middle">
             <a className="logo" href="/">
               <img className="" src={logo} alt="mgm-timber"/>
             </a>
-          </div>
+          </div> */}
+          <div className="logo" >
+                {
+                props._site.c_mgmTimberLogo?
+                <img src={props._site.c_mgmTimberLogo.url} alt="logo"/>:
+                <div/>
+                
+                } 
+                </div>
+                </div>
           <div className="header-content-right lg:hidden">
             <span className="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -206,8 +228,8 @@ const Header = () => {
             </span>
           </div>
         </div>
-        {/* <div className="container"> */}
-        <div style={{background:"#02a6db"}} className="text-black">
+        <div className="">
+        <div style={{background:"#02a6db"}} className="text-black w-full">
           <nav className="navbar">
             {linkDoms}
           </nav>

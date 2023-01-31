@@ -40,7 +40,7 @@ type UnwrappedGoogleMapsProps = Omit<GoogleMapsProps, 'apiKey'|'locale'>;
 let mapMarkerClusterer: { clearMarkers: () => void; } | null = null;
 
 const builtInCssClasses: Readonly<GoogleMapsCssClasses> = {
-  googleMapsContainer: 'w-full  h-48 md:h-96 lg:h-[calc(100vh_-_0px)] xl:h-[calc(100vh_-_0px)]  top-0   2xl:h-[calc(100vh_-_0px)] order-1 lg:order-none z-[99]'
+  googleMapsContainer: 'w-full h-48 md:h-96 lg:h-[calc(100vh_-_0px)] xl:h-[calc(100vh_-_0px)]  top-0   2xl:h-[calc(100vh_-_0px)] order-1 lg:order-none z-[99]'
 };
 
 /**
@@ -308,7 +308,7 @@ function Infowindow(i:Number,result:any):void{
         (
         <div className="markerContent w-48 md:w-[350px] font-universpro font-normal text-darkgrey text-xs md:text-sm leading-6">
         <div className="nameData font-bold text-sm md:text-base">{result.name}</div>
-        <div style={{marginLeft:"220px",fontSize:"15px"}} className="nameData font-bold text-sm md:text-base">{metersToMiles(result.distance)} Mi</div>
+        <div style={{marginLeft:"200px",fontSize:"15px"}} className="nameData font-bold text-sm md:text-base">{metersToMiles(result.distance)} Mi</div>
         <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.line1},{result.rawData.address.line2}</div>
         {/* <div className="nameData font-bold text-sm md:text-base"></div> */}
         <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.city}</div>

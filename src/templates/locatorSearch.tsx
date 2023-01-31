@@ -9,6 +9,32 @@ import {  AnswerExperienceConfig  } from "../config/globalConfig";
 import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
 
+export const config: TemplateConfig = {
+  stream: {
+    $id: "locator",
+    // Specifies the exact data that each generated document will contain. This data is passed in
+    // directly as props to the default exported function.
+    fields: [
+      "name",
+    "c_mgmTimberLogo",
+    "c_headerLinks",
+    "c_footerDescription",
+    "c_socialIcons",
+    "c_customer_Services",
+    "c_aboutMgm"
+
+    ],
+    // Defines the scope of entities that qualify for this stream.
+    filter: {
+      entityIds: ["globleData"],
+    },
+    // The entity language profiles that documents will be generated for.
+    localization: {
+      locales: ["en_GB"],
+      primary: false,
+    },
+  },
+};
 export const getPath: GetPath<TemplateProps> = () => {
   return `/index.html`;
 };
@@ -52,7 +78,7 @@ const providerOptions: google.maps.MapOptions = {
 
 return (
     <>
-    <PageLayout>
+    <PageLayout _site={_site}>     
   
         <SearchHeadlessProvider
             experienceKey={AnswerExperienceConfig.experienceKey}
@@ -67,6 +93,7 @@ return (
         </SearchHeadlessProvider>  
        
         </PageLayout>
+        
     </>
   );
 };
