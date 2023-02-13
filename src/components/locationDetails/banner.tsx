@@ -46,6 +46,10 @@ const Banner = (props: Banner) => {
         </div>
         {children}
       </div>
+      <div>
+          <GetDirection  buttonText={"View on google maps"} latitude={latitude}
+                  longitude={longitude} ></GetDirection>
+        </div>
     </>
   );
 };

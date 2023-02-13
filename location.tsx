@@ -124,7 +124,7 @@ export const getPath: GetPath<TemplateProps> = ({document}) => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3">
                 <div className="address-phone space-y-5">
                   <h2 className="text-xl font-semibold mb-4">Address</h2>
-                  <Address address={address}></Address>
+                  <Address address={address}></Address>s
                   <div className="space-x-3">
                     <span>&#128222;</span>
                     <span>{formattedPhone}</span>
