@@ -174,8 +174,8 @@ const Location: Template<TemplateRenderProps> = ({
               </div>
               <div className="bg-gray-100 p-2">
                 <StaticMap
-                  latitude={yextDisplayCoordinate.latitude}
-                  longitude={yextDisplayCoordinate.longitude}
+                  latitude={yextDisplayCoordinate?.latitude}
+                  longitude={yextDisplayCoordinate?.longitude}
                 />
               </div>
 
